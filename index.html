@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Modal</title>
+
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+	<section id="hero">
+		<div class="container">
+			<nav>
+				<h1>Gustitos D'Marcel</h1>
+				<ul>
+					<li>Inicio</li>
+					<li>Acerca</li>
+					<li>Contacto</li>
+				</ul>
+			</nav>
+			<div class="content">
+				<p>Hacemos la mejor comida</p>
+				<button id="showModal">Mas información</button>
+			</div>
+		</div>		
+	</section>
+
+	<div class="modal modal--hidden">
+		<div class="modal_content">
+			<div class="modal_close_bar"><span id="closeModal">X</span></div>
+			<p>ingrese su dirección de email para obtener mas información</p>
+			<form id="form">
+				<input type="email" placeholder="su email principal">
+				<button type="submit" id="submit">Enviar</button>
+			</form>
+		</div>
+	</div>
+
+	<script src="app.js"></script>
+	
+</body>
+</html>

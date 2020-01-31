@@ -1,0 +1,107 @@
+/*VARIABLES*/
+/*$primary: #3371d6;
+$primary-darker: #204582;*/
+
+*{
+	font-family: sans-serif;
+}
+
+nav{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav ul{
+	list-style-type: none;
+	display: flex;
+}
+
+nav ul li{
+	font-weight: 700;
+	margin: 0 1rem;
+}
+
+.container{
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+#hero{
+	background-image: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.3)), url('img/background2.jpg');
+	background-size: cover;
+	height: 900px;
+	color: #fff;
+}
+
+.content{
+	font-weight: 800;
+	text-transform: uppercase;
+	text-align: center;
+	margin: 100px auto;
+	font-size: 4rem;
+}
+
+.content button{
+	font-size: 3rem;
+	background-color: #3371d6;
+	color: #fff;
+	border: none;
+	padding: .5rem 2rem;
+	transition: all .3s ease;
+	cursor: pointer;	
+}
+
+.content button:hover{	
+	background-color: #204582;
+}
+
+.modal{	
+	background-color: rgba(0,0,0,0.7);
+	position: absolute;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.modal--hidden{
+	display: none;
+}
+
+.modal .modal_content{
+	background-color: #fff;	
+	padding: 2rem 4rem;
+}
+
+.modal .modal_content input[type=email]{
+	width: 100%;
+	padding: .5rem;	
+}
+
+.modal .modal_content button{
+	width: 100%;
+	padding: .5rem;
+	background-color: #3371d6;
+	border: none;
+	color: #fff;
+	transition: all .3s ease;
+	cursor: pointer;
+}
+
+.modal .modal_content button:hover{
+	
+	background-color: #204582;
+	
+}
+
+.modal_close_bar{
+	cursor: pointer;
+	display: flex;
+	justify-content: flex-end;
+	margin-right: -2rem;
+	margin-top: -1rem;
+	cursor: pointer;
+}
